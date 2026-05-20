@@ -5,6 +5,23 @@
   "version": "0.2.0",
   "configurations": [
     {
+        "name": "default-debugpy-attacher",
+        "type": "debugpy",
+        "request": "attach",
+        "connect": {
+            "host": "localhost",
+            "port": 5678
+        },
+        "debugpyAttacher": true,
+        "pathMappings": [
+            {
+                "localRoot": "${workspaceFolder}",
+                "remoteRoot": "${workspaceFolder}"
+            }
+        ],
+        "justMyCode": false
+    },
+    {
       "name": "Launch Mergington WebApp",
       "type": "debugpy",
       "request": "launch",
